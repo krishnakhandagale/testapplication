@@ -1,0 +1,158 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+body{
+  font-family: 'Open Sans', sans-serif;
+}
+.App {
+  text-align: left;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40vmin;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.listStyle{
+  margin: 5px;
+  padding: 5px;
+  width: 48%;
+  float: left;
+  display: inline-table;
+  list-style: none;
+  text-align: left;
+}
+.listStyle ul li{
+  height: auto;
+  min-height: 200px;
+  padding: 5px;
+  color: #77806c;
+  list-style-type: none;
+  cursor: pointer;
+}
+
+.listStyle li:nth-child(even) {background-color: #f9f9f9;}
+.listStyle li:nth-child(odd) {background-color: #f2f2f2;}
+.filter{
+  text-align: left;
+  padding: 5px;
+  border: 0;
+  outline: 0;
+  text-transform: capitalize;
+}
+.option-label{
+  font-size: 16px;
+  font-weight: bold;
+}
+.left-side-text{
+  padding: 5px;
+  text-align: left;
+}
+.errorMessage{
+  position: absolute;
+  padding: 10px;
+  background: gray;
+  color: wheat;
+  right: 0;
+}
+.article-image{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+.selected-source{
+  border: 1px solid green;
+}
+.search-link{
+  margin-left: 15px;
+  margin-top: 5px;
+}
+
+
+
+
+
+.search {
+  text-align: center;
+  width: 100%;
+  position: relative
+}
+
+.searchTerm {
+  float: left;
+  margin: 10px;
+  width: 70%;
+  border: 1px solid #1f9eaf;
+  padding: 5px;
+  height: 20px;
+  border-radius: 5px;
+  outline: none;
+  color: #000;
+}
+.search-link-article{
+  float: left;
+  margin: 10px;
+  width: 10%;
+  padding: 5px;
+  height: 20px;
+  border-radius: 5px;
+  outline: none;
+  color: #000;
+}
+
+.searchTerm:focus{
+  color: #000;
+}
+
+.searchButton {
+  position: absolute;
+  right: -50px;
+  width: 40px;
+  height: 36px;
+  border: 1px solid #00B4CC;
+  background: #00B4CC;
+  text-align: center;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 20px;
+}
+.wrap{
+  width: 30%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.centered {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transform: -webkit-translate(-50%, -50%);
+  transform: -moz-translate(-50%, -50%);
+  transform: -ms-translate(-50%, -50%);
+  color: darkred;
+}
